@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Control de Acceso al Catálogo</h1>
-    <a href="index.php" class="volver-btn">← Volver al catálogo</a>
+    <a href="index.php" class="volver-btn">Volver al catálogo</a>
 
     <form action="procesar_login.php" method="POST" class="form">
         <label>Usuario:</label>

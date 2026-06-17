@@ -11,7 +11,7 @@ require_once 'clases/repositorio.php';
 require_once 'clases/dlc.php';
 
 if (!isset($_GET['id']) || empty($_GET['id'])) {
-    echo "ID de DLC no especificado. <a href='index.php'>Volver</a>";
+    echo " DLC no especificado. <a href='index.php'>Volver</a>";
     exit();
 }
 
@@ -45,7 +45,7 @@ if ($conexionPDO) {
 </head>
 <body>
     <h1>Editar DLC: <?php echo htmlspecialchars($dlc->getTitulo()); ?></h1>
-    <a href="index.php" class="volver-btn">← Volver al catálogo</a>
+    <a href="index.php" class="volver-btn">Volver al catálogo</a>
 
     <form action="procesar_editar_dlc.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $dlc->getId(); ?>">

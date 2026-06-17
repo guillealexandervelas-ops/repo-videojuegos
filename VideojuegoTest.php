@@ -1,7 +1,6 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-// Importamos tu clase original para poder testearla
 require_once __DIR__ . '/clases/videojuego.php';
 
 class VideojuegoTest extends TestCase {

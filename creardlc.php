@@ -23,7 +23,7 @@
 </head>
 <body>
     <h1>Añadir un Nuevo DLC al Catálogo</h1>
-    <a href="index.php" class="volver-btn">← Volver al catálogo</a>
+    <a href="index.php" class="volver-btn">Volver al catálogo</a>
     <form action="procesar_dlc.php" method="POST">
         
         <label>Título del DLC:</label>

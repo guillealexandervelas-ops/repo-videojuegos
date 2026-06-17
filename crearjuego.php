@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Añadir un Nuevo Videojuego al Catálogo</h1>
-    <a href="index.php" class="volver-btn">← Volver al catálogo</a>
+    <a href="index.php" class="volver-btn">Volver al catálogo</a>
 
     <?php
     require_once 'clases/conexion.php';

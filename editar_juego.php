@@ -24,7 +24,7 @@ $repositorio = new Repositorio($conexionPDO);
 $videojuego = $repositorio->obtenerVideojuegoPorId($id);
 
 if ($videojuego === null) {
-    echo "El videojuego no existe. <a href='index.php'>Volver</a>";
+    echo "El juego no existe. <a href='index.php'>Volver</a>";
     exit();
 }
 ?>
@@ -38,7 +38,7 @@ if ($videojuego === null) {
 </head>
 <body>
     <h1>Editar Videojuego: <?php echo htmlspecialchars($videojuego->getTitulo()); ?></h1>
-    <a href="index.php" class="volver-btn">← Volver al catálogo</a>
+    <a href="index.php" class="volver-btn">Volver al catálogo</a>
 
     <form action="procesar_editar.php" method="POST">
         
