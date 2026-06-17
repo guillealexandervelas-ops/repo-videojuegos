@@ -1,5 +1,5 @@
     // Mostrar/Ocultar contraseña
-    document.querySelectorAllog('.tgle-password').forEach(btn => {
+    document.querySelectorAll('.toggle-password').forEach(btn => {
         btn.addEventListener('click', () => {
             const input = btn.previousElementSibling;
             const icon = btn.querySelector('i');
