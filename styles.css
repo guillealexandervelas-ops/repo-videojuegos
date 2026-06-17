@@ -1,0 +1,193 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    position: relative;
+    z-index: 0;
+    background-color: #ffffff;
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #000;
+    margin: 20px 0;
+}
+/* Imagen de fondo (ajusta la ruta/nombre en caso necesario) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("img/322065.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+
+/* Contenedores de catálogo - distribuir horizontalmente */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* Estilo para cada videojuego y DLC */
+.videojuego,
+.dlc {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.videojuego h2,
+.dlc h2 {
+    margin-top: 0;
+    color: #ffffff;
+    text-align: left;
+}
+.form-borrar{
+    display: inline;
+}
+.videojuego p,
+.dlc p {
+    margin: 8px 0;
+    color: #ffffff;
+}
+
+/* Estilos del Header */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+header span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+form {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 10px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+form input,
+form select {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #222;
+    color: #ffffff;
+}
+
+
+
+.volver-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Contenedor de contraseña */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    padding-right: 40px;
+    flex: 1;
+}
+
+/* Botón toggle de contraseña */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password:hover {
+    color: #0070f3;
+    transition: color 0.3s;
+}
